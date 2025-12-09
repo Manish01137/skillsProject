@@ -1619,3 +1619,155 @@ h4 {
         margin-top: 30px;
     }
 }
+.footer {
+    background: linear-gradient(135deg, #092038, #0b2547);
+    color: #d9e2ef;
+    padding: 70px 8% 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Brand box */
+.footer-logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    width: 60px;
+}
+
+.brand-name {
+    font-size: 22px;
+    margin: 0;
+}
+
+.brand-tagline {
+    font-size: 14px;
+    color: #f0c455;
+}
+
+.footer-about {
+    margin: 15px 0 25px;
+    line-height: 1.6;
+    color: #c7d1dd;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    transition: 0.3s ease;
+    font-size: 17px;
+}
+
+.social-icons a:hover {
+    background: #f0c455;
+    color: #000;
+}
+
+/* Quick Links */
+.footer-col h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cfd9e5;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0c455;
+}
+
+/* Contact Section */
+.contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: #f0c455;
+    font-size: 18px;
+}
+
+/* Newsletter */
+.newsletter-text {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #3d4f63;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 12px;
+    background: #f0c455;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #ffdd7a;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
